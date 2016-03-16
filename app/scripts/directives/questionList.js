@@ -7,10 +7,13 @@
  * # questionParts
  */
 angular.module('appPetoolApp')
-  .directive('questionParts', function () {
+  .directive('questionList', function () {
     return {
-      templateUrl: 'directives/questionpart.html',
+      templateUrl: 'directives/questions.html',
       restrict: 'E',
-      replace: true
+      replace: true,
+      scope: {
+        questionGroup: "="
+      }
     };
   });

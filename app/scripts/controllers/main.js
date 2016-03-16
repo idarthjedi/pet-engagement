@@ -10,7 +10,7 @@
 angular.module('appPetoolApp')
   .controller('MainCtrl', ['$scope', function ($scope) {
 
-    $scope.questionCollection = [
+    $scope.questions = [
       {
         typeName: "Disaster Recovery"
       },

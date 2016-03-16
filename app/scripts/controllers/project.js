@@ -8,5 +8,23 @@
  * Controller of the appPetoolApp
  */
 angular.module('appPetoolApp')
-  .controller('projectCtrl', function () {
-  });
+  .controller('selectProjectCtrl', ['$scope', function ($scope) {
+
+    $scope.projects = [
+      {
+        projName: "Project 1"
+      },
+      {
+        projName: "Project 2"
+      },
+      {
+        projName: "Project 3"
+      },
+      {
+        projName: "Project 4"
+      },
+      {
+        projName: "Project 5"
+      }
+    ];
+  }]);
