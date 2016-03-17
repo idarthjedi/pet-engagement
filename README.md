@@ -17,11 +17,15 @@ a project I hope to initiate within my organization.
 
 For now: here it is.  The Project Engagement Tool
 
-//**Note: Thanks to an Unnamed company for the idea.
+//*Note the idea for the "PET" is not an original idea; but the implementation is original.
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+1) Clone the project
+2) run NPM Update
+3) install grunt and grunt-cli and bower
+4) run bower update 
+5) Run `grunt` for building and `grunt serve` for preview.
 
 ## Testing
 
