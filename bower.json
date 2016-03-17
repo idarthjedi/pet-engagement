@@ -10,7 +10,8 @@
     "angular-route": "^1.4.0",
     "angular-sanitize": "^1.4.0",
     "angular-touch": "^1.4.0",
-    "startbootstrap-sb-admin-2": "^1.0.8"
+    "startbootstrap-sb-admin-2": "^1.0.8",
+    "angular-schema-form": "^0.8.12"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"

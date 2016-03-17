@@ -39,6 +39,10 @@ module.exports = function(config) {
       'bower_components/datatables-responsive/js/dataTables.responsive.js',
       'bower_components/flot.tooltip/js/jquery.flot.tooltip.js',
       'bower_components/startbootstrap-sb-admin-2/dist/js/sb-admin-2.js',
+      'bower_components/tv4/tv4.js',
+      'bower_components/objectpath/lib/ObjectPath.js',
+      'bower_components/angular-schema-form/dist/schema-form.js',
+      'bower_components/angular-schema-form/dist/bootstrap-decorator.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
