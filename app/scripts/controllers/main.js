@@ -10,22 +10,123 @@
 angular.module('appPetoolApp')
   .controller('MainCtrl', ['$scope', function ($scope) {
 
-    $scope.questions = [
+    /*will use the following angular library to build the form questions based on JSON schema
+     https://github.com/json-schema-form/angular-schema-form/blob/development/docs/index.md
+     */
+
+    $scope.questionGroup = [
       {
-        typeName: "Disaster Recovery"
+        category: 'Disaster Recovery',
+        questions: [
+          {
+            question: 'What is your name?',
+            type: 'text',
+            options: [],
+            notification: [
+              'my@email.com',
+              'my.other@email.com'
+            ]
+          },
+          {
+            question: 'What is your favorite color?',
+            type: 'radio',
+            options: ['blue', 'green', 'red'],
+            notification: [
+              'my@email.com',
+              'my.other@email.com'
+            ]
+          }
+        ],
+
       },
       {
-        typeName: "Database"
+        category: 'Database',
+        questions: [{
+          question: 'What is your favorite color?',
+          type: 'radio',
+          options: ['blue', 'green', 'red'],
+          notification: [
+            'my@email.com',
+            'my.other@email.com'
+          ]
+        },
+          {
+            question: 'What is your database technology?',
+            type: 'option',
+            option: ['Oracle', 'MSSQL', 'MongoDB', 'MariaDB', 'MySQL'],
+            notification: [
+              'my@email.com',
+              'my.other@email.com'
+            ]
+          },
+          {
+            question: 'What is your favorite color?',
+            type: 'radio',
+            options: ['blue', 'green', 'red'],
+            notification: [
+              'my@email.com',
+              'my.other@email.com'
+            ]
+          }
+        ]
+
       },
       {
-        typeName: "Performance"
+        category: 'Performance',
+        questions: [{
+          question: 'How many swallows does it take to carry a coconut from Asia to Europe?',
+          type: 'text',
+          options: [],
+          notification: [
+            'my@email.com',
+            'my.other@email.com'
+          ]
+        },{
+          question: 'Are you using a standard building block?',
+          type: 'option',
+          option: ['Yes', 'No'],
+          notification: [
+            'my@email.com',
+            'my.other@email.com'
+          ]
+        }]
+
       },
       {
-        typeName: "Security"
+        category: 'Security',
+        questions: [{
+          question: 'How would you like me to say no?',
+          type: 'select',
+          options: ['Yell at me', 'Passive Aggressive response'],
+          notification: [
+            'my@email.com',
+            'my.other@email.com'
+          ]
+        },
+          {
+            question: 'Are you using a standard building block?',
+            type: 'option',
+            option: ['Yes', 'No'],
+            notification: [
+              'my@email.com',
+              'my.other@email.com'
+            ]
+          }
+        ]
       },
       {
-        typeName: "Architecture"
-      }
+        category: 'Architecture',
+        questions: [{
+          question: 'Are you using a standard building block?',
+          type: 'option',
+          option: ['Yes', 'No'],
+          notification: [
+            'my@email.com',
+            'my.other@email.com'
+          ]
+        }]
+
+      },
     ];
 
   }]);
