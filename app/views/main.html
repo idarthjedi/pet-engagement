@@ -2,5 +2,30 @@
 <h2>Questionnaire</h2>
 <hr/>
 <div class="panel panel-default" >
-  <question-list question-group="questions"></question-list>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default" ng-repeat="question in questions">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ $index }}" onclick="return false;">
+            <!--this is a higher level grouping of questions that will eventually be pulled from a database-->
+            {{ question.typeName }}
+          </a>
+          <!--the next span is intended to show the  # of unanswered questions-->
+          <span class="badge pull-right alert-info">{{$index + 3}}</span></h3>
+      </div>
+      <div id="collapse{{$index}}" class="panel-collapse collapse">
+        <div class="panel-body">
+          <ul class="list-group">
+            <!--this is the list of questions to display on the form
+            There is some additional thought that needs to be put into how to change the unanswered question badge
+            one thought is to use the linking capabilities of the directive, but that means I have to break down the
+            ng-repeat to be more granular-->
+            <li class="list-group-item alert-warning">Question 1</li>
+            <li class="list-group-item">Question 2</li>
+            <li class="list-group-item">Question 3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

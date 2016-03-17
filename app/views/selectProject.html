@@ -3,7 +3,11 @@
     <div class="form-group">
       <label class="col-md-3 control-label">Project</label>
       <div class="col-md-5">
-          <project-list project-group="projects"></project-list>
+        <select class="form-control" name="project">
+          <option value="">Select a Project</option>
+          <option value="project{{$index}}" ng-repeat="project in projects">{{project.projName}}</option>
+        </select>
+
       </div>
       <div class="col-md-2">
         <button type="submit" class="btn btn-default">Lookup</button>
