@@ -21,11 +21,11 @@ For now: here it is.  The Project Engagement Tool
 
 ## Build & development
 
-1) Clone the project
-2) run NPM Update
-3) install grunt and grunt-cli and bower
-4) run bower update 
-5) Run `grunt` for building and `grunt serve` for preview.
+1) Clone the project <br/>
+2) run npm update <br/>
+3) install grunt and grunt-cli and bower <br/>
+4) run bower update <br/>
+5) Run `grunt` for building and `grunt serve` for preview. <br/>
 
 ## Testing
 
