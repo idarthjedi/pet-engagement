@@ -18,6 +18,7 @@ angular
     'ngTouch'
   ])
   .config(function ($routeProvider) {
+    //TODO: There is a bug here where the "active" tab, doesn't display as active in the UI.
     $routeProvider
       .when('/', {
         templateUrl: 'views/selectProject.html',
