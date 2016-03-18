@@ -8,8 +8,10 @@
  * Controller of the appPetoolApp
  */
 angular.module('appPetoolApp')
-  .controller('selectProjectCtrl', ['$scope', 'projectSingleton', function ($scope, projectSingleton) {
+  .controller('selectProjectCtrl', ['$scope', '$route', 'projectSingleton', function ($scope, $route, projectSingleton) {
 
+    $scope.$route = $route;
+    
     //initialize the model for the local selected project list.
     $scope.projectList =
     {

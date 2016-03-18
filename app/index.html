@@ -50,17 +50,17 @@
 <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <a href="#/" class="navbar-brand">PET Tool</a>
+      <span class="navbar-brand">PET Tool</span>
       <button class="btn btn-success navbar-toggle"><span class="glyphicon glyphicon-list"
-                                                          data-toggle="collapse"
-                                                          data-target=".navbar-collapse">
+                                                                                data-toggle="collapse"
+                                                                                data-target=".navbar-collapse">
       </span></button>
     </div>
     <nav class="navbar-collapse collapse" role="navigation">
       <ul class="nav navbar-nav navbar-right">
-        <li class="nav active"><a href="#/">Project</a></li>
-        <li class="nav"><a ng-href="#/project">Project Details</a></li>
-        <li class="nav"><a ng-href="#/about">About</a></li>
+        <li class="nav {active: $route.current.activetab === 'project'}"><a href="#/">Project</a></li>
+        <li class="nav {active: $route.current.activetab === 'main'}"><a ng-href="#/project">Project Details</a></li>
+        <li class="nav {active: $route.current.activetab === 'about'}"><a ng-href="#/about">About</a></li>
       </ul>
       <!--      <ul class="nav navbar-nav">
         <li>

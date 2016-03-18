@@ -18,24 +18,26 @@ angular
     'ngTouch'
   ])
   .config(function ($routeProvider) {
-    //TODO: There is a bug here where the "active" tab, doesn't display as active in the UI.
     $routeProvider
       .when('/', {
         templateUrl: 'views/selectProject.html',
         controller: 'selectProjectCtrl',
-        controllerAs: 'project'
+        controllerAs: 'project',
+        activetab: 'project'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
-        controllerAs: 'about'
+        controllerAs: 'about',
+        activetab: 'about'
       })
       .when('/project', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
-        controllerAs: 'main'
+        controllerAs: 'main',
+        activetab: 'main'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/',
       });
   });

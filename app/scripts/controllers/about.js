@@ -8,10 +8,7 @@
  * Controller of the appPetoolApp
  */
 angular.module('appPetoolApp')
-  .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('AboutCtrl', ['$scope', '$route', function ($scope, $route) {
+    $scope.$route = $route;
+    }]
+  );
