@@ -8,11 +8,14 @@
  * Controller of the appPetoolApp
  */
 angular.module('appPetoolApp')
-  .controller('MainCtrl', ['$scope', function ($scope) {
+  .controller('MainCtrl', ['$scope', 'projectSingleton', function ($scope, projectSingleton) {
 
     /*will use the following angular library to build the form questions based on JSON schema
      https://github.com/json-schema-form/angular-schema-form/blob/development/docs/index.md
      */
+
+    $scope.projectNameLocal = projectSingleton.chosenProject.name;
+
 
     $scope.questionGroup = [
       {
