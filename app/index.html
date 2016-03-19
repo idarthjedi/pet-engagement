@@ -58,9 +58,9 @@
     </div>
     <nav class="navbar-collapse collapse" role="navigation">
       <ul class="nav navbar-nav navbar-right">
-        <li class="nav {active: $route.current.activetab === 'project'}"><a href="#/">Project</a></li>
-        <li class="nav {active: $route.current.activetab === 'main'}"><a ng-href="#/project">Project Details</a></li>
-        <li class="nav {active: $route.current.activetab === 'about'}"><a ng-href="#/about">About</a></li>
+        <li class="nav" ng-class="{active: $route.current.activetab === 'project'}"><a href="#/">Project</a></li>
+        <li class="nav" ng-class="{active: $route.current.activetab === 'main'}"><a ng-href="#/project">Project Details</a></li>
+        <li class="nav" ng-class="{active: $route.current.activetab === 'about'}"><a ng-href="#/about">About</a></li>
       </ul>
       <!--      <ul class="nav navbar-nav">
         <li>
