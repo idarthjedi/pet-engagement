@@ -10,10 +10,10 @@
 angular.module('appPetoolApp')
   .controller('selectProjectCtrl', ['$scope', '$route', 'projectSingleton', function ($scope, $route, projectSingleton) {
 
-    $scope.$route = $route;
-    
+    this.$route = $route;
+
     //initialize the model for the local selected project list.
-    $scope.projectList =
+    this.projectList =
     {
       selectedProject: {
         projID: projectSingleton.chosenProject.id,
@@ -23,14 +23,14 @@ angular.module('appPetoolApp')
 
     //watch when the local model for the selected project changes and updated the shared
     //singleton object
-    $scope.$watch('projectList.selectedProject', function()
-     {
-       projectSingleton.chosenProject.id = $scope.projectList.selectedProject.projID;
-       projectSingleton.chosenProject.name = $scope.projectList.selectedProject.projName;
+    $scope.$watch(angular.bind(this, function(){
+      return this.projectList.selectedProject;
+    }), function(chosenProject){
+      projectSingleton.chosenProject.id = chosenProject.projID;
+      projectSingleton.chosenProject.name = chosenProject.projName;
+    });
 
-     });
-
-    $scope.projects = [
+    this.projects = [
       {
         projID: '1',
         projName: "Project 1"

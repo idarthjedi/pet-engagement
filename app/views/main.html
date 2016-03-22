@@ -2,9 +2,9 @@
 <h2>Questionnaire</h2>
 <hr/>
 <div class="panel panel-default" >
-  <div class="panel-heading panel-title h2">{{projectNameLocal}}</div>
+  <div class="panel-heading panel-title h2">{{mainController.projectNameLocal}}</div>
   <div class="panel-group" id="accordion">
-    <div class="panel panel-default" ng-repeat="categories in questionGroup">
+    <div class="panel panel-default" ng-repeat="categories in mainController.questionGroup">
       <div class="panel-heading">
         <h3 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ $index }}" onclick="return false;">

@@ -3,8 +3,8 @@
     <div class="form-group">
       <label for="selectedProject" class="col-md-3 control-label">Select a Project</label>
       <div class="col-md-5">
-       <select id="selectedProject" class="form-control" ng-model="projectList.selectedProject"
-        ng-options="project.projName for project in projects track by project.projID">
+       <select id="selectedProject" class="form-control" ng-model="projectController.projectList.selectedProject"
+        ng-options="project.projName for project in projectController.projects track by project.projID">
 <!--          <option value="">Select a Project</option>
           <option ng-repeat="project in projects" id="{{project.projID}}">{{project.projName}}</option>-->
         </select>

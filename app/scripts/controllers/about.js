@@ -9,6 +9,6 @@
  */
 angular.module('appPetoolApp')
   .controller('AboutCtrl', ['$scope', '$route', function ($scope, $route) {
-    $scope.$route = $route;
+    this.$route = $route;
     }]
   );
