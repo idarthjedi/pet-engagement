@@ -23,6 +23,8 @@ angular.module('appPetoolApp')
 
     //watch when the local model for the selected project changes and updated the shared
     //singleton object
+    //Had to use angular.bind because otherwise because I am using the controllerAs syntax,
+    //the change for the object wouldn't not have been fired using using $scope.$watch().
     $scope.$watch(angular.bind(this, function(){
       return this.projectList.selectedProject;
     }), function(chosenProject){
