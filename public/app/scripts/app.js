@@ -20,19 +20,19 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/selectProject.html',
+        templateUrl: '/app/views/selectProject.html',
         controller: 'selectProjectCtrl',
         controllerAs: 'projectController',
         activetab: 'project'
       })
       .when('/about', {
-        templateUrl: 'views/about.html',
+        templateUrl: '/app/views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'aboutController',
         activetab: 'about'
       })
       .when('/project', {
-        templateUrl: 'views/main.html',
+        templateUrl: '/app/views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'mainController',
         activetab: 'main'

@@ -1,0 +1,14 @@
+{
+  "name": "apppetserv",
+  "version": "1.0.0",
+  "description": "server side implementation for the AngularJS PET Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jediah Logiodice",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

@@ -22,10 +22,11 @@ For now: here it is.  The Project Engagement Tool
 ## Build & development
 
 1) Clone the project <br/>
-2) run npm update <br/>
-3) install grunt and grunt-cli and bower <br/>
-4) run bower update <br/>
-5) Run `grunt` for building and `grunt serve` for preview. <br/>
+2) run npm update in both the /public folder and the /server folder *I realize there is probably a better way to do this<br/>
+3) install grunt and grunt-cli and bower (globally probably)<br/>
+4) run bower update in /public <br/>
+5) To see the AngularJS App, in /Public Run `grunt` for building and `grunt serve` for preview. <br/>
+6) To serve the application from the Node server, CWD into /server and use nodemon to run index.js
 
 ## Testing
 

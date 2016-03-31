@@ -5,3 +5,4 @@
 /public/bower_components
 /.idea
 /public/.tmp
+/server/node_modules
