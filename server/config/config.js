@@ -8,8 +8,6 @@ var initGlobalConfig = function(){
 
   //Port to run the application on
   config.PORT = 3000;
-
-
   return config;
 };
 

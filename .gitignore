@@ -2,7 +2,8 @@
 /public/dist
 /.tmp
 /.sass-cache
-/public/bower_components
+/public/lib
 /.idea
 /public/.tmp
 /server/node_modules
+*/npm-debug.log
